@@ -13,4 +13,4 @@ ORDER BY
     PDB_NAME;
 
 --Creation de la copie de la base de donées
-CREATE USER C##COPIE_PDB_ECOLE IDENTIFIED BY oracle;
+CREATE USER COPIE_PDB_ECOLE IDENTIFIED BY oracle;
