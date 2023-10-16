@@ -1,5 +1,15 @@
 --À l'aide de sys@pdb_ecole
 
+--Creation du profil pour Momo
+CREATE PROFILE PROFIL_MOMO LIMIT
+FAILED_LOGIN_ATTEMPTS 1
+PASSWORD_LOCK_TIME 10/1440
+SESSIONS_PER_USER 1
+IDLE_TIME 3;
+
+--Assignation du profil gestionnaire au usager correspondant
+ALTER USER MOMO PROFILE PROFIL_MOMO;
+
 --Creation du profil pour le gestionnaire
 CREATE PROFILE PROFIL_GESTIONNAIRE LIMIT
 FAILED_LOGIN_ATTEMPTS 3
